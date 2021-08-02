@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.3/css/fixedColumns.dataTables.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-main navbar-daap-top">
+
+        <div class="collapse navbar-collapse navbar-daap" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                  <img src="./assests/main-logo.png" width="151" class="d-inline-block align-top" alt=""><span
+                    class="nav-name">Digital and Automation Platform</span>
+    
+                </a>
+              </nav>
+    
+            </li>
+    
+          </ul>
+          <ul class="navbar-rt">
+            <li><img src="./assests/icons/bell.svg"></li>
+            <li><img src="./assests/icons/information.svg"></li>
+            <li><img src="./assests/icons/user.svg"></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbar-text" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    John Lenon
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </li>
+            <!-- <li>
+              <p class="">
+                 <img src="./assests/icons/arrow-down-sign-to-navigate (1).svg">
+              </p>
+            </li> -->
+          </ul>
+    
+        </div>
+      </nav>
+      <nav class="nav fixed-top primary-nav nav-underline nav-primary bg-main">
+        <a class="nav-link" href="#"><img src="./assests/icons/home.svg" style="width: 26px; color:#fff"></a>
+        <a class="nav-link" href="#">Automation</a>
+        <a class="nav-link activated" href="#">Product Management</a>
+        <a class="nav-link" href="#">Script Hub</a>
+        <a class="nav-link" href="#">Developer's Community</a>
+    
+      </nav>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav-secondary">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Idea Pipeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link separator" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Portfolio</a>
+          </li>
+    
+        </ul>
+      </nav>
+      <div class="container-fluid breadcrumb-links">
+        <div class="row">
+          <nav aria-label="breadcrumb" class="breadcrumb-content">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active"><a href="#">Project Management</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="container-fluid main-content">
+        <div class="row">
+          <div class="col-md-12">
+             
+            <div class="pricing-header mx-auto">
+              <h1 class="display-4">Portfolio</h1>
+              <p class="lead"> Portfolio Here you will find all the projects DDC is working on.</p>
+                <!-- <select data-placeholder="Your Favorite Types of Bear" class="chosen-select" tabindex="2" id="chosenId">
+                    <option value=""></option>
+                    <option selected>American Black Bear</option>
+                    <option>Asiatic Black Bear</option>
+                    <option>Brown Bear</option>
+                    <option>Giant Panda</option>
+                    <option>Sloth Bear</option>
+                    <option>Sun Bear</option>
+                    <option>Polar Bear</option>
+                    <option>Spectacled Bear</option>
+                  </select> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card search-card">
+              <div class="card-body">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Search Scripts by script name, tags, plugin name, etc.">
+                    </div>
+    
+                  </div>
+                </form>
+                <div class="container-fluid">
+                  <div class="row justify-content-start">
+                    
+                    <form>
+                      <div class="form-row">
+                        <div class="col-12">
+                          <label for="exampleFormControlSelect2">Filters:</label>
+                          <!-- <select class="custom-select"> -->
+                              <select data-placeholder="PBU" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId">
+                                  <option value=""></option>
+                                  <option value="United States" id="United States">United States</option>
+                                  <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                  <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                  <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                  <option value="United States" id="United States4">United States</option>
+                               
+                                </select>
+                                <select data-placeholder="Market" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId1">
+                                    <option value=""></option>
+                                    <option value="United States" id="United States">United States</option>
+                                    <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                    <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                    <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                    <option value="United States" id="United States4">United States</option>
+                                 
+                                  </select>
+                                  <select data-placeholder="Discipline" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId2">
+                                      <option value=""></option>
+                                      <option value="United States" id="United States">United States</option>
+                                      <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                      <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                      <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                      <option value="United States" id="United States4">United States</option>
+                                   
+                                    </select>
+                                    <select data-placeholder="Category" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId3">
+                                      <option value=""></option>
+                                      <option value="United States" id="United States">United States</option>
+                                      <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                      <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                      <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                      <option value="United States" id="United States4">United States</option>
+                                   
+                                    </select>
+                                    
+                                        <select data-placeholder="Uploaded by" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId4">
+                                            <option value=""></option>
+                                            <option value="United States" id="United States">United States</option>
+                                            <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                            <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                            <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                            <option value="United States" id="United States4">United States</option>
+                                         
+                                          </select>
+                                          <select data-placeholder="Date Added" class="chosen-select custom-select pipeline-select" tabindex="2" id="chosenId5">
+                                              <option value=""></option>
+                                              <option value="United States" id="United States">United States</option>
+                                              <option value="United Kingdom" id="United States1">United Kingdom</option>
+                                              <option value="Afghanistan" id="United States2">Afghanistan</option>
+                                              <option value="Aland Islands" id="United States3">Aland Islands</option>
+                                              <option value="United States" id="United States4">United States</option>
+                                           
+                                            </select>
+                          
+                        </div>
+    
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid filter-content">
+
+        <div class="row">
+          <div class="col-md-12">
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-daap-pills">
+    
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <!-- <a class="nav-item nav-link active" href="#">All <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link" href="#">My Uploads</a>
+                      <a class="nav-item nav-link" href="#">Favourites</a>
+                      <a class="nav-item nav-link" href="#">Downloads</a> -->
+                    </div>
+                  </div>
+                </nav>
+              <!-- <div class="btn-group" aria-label="Basic example" id="breadList"></div> -->
+              <ul class="nav nav-filter-list" style="margin:1rem 0">
+                  <li class="nav-item" id="breadList">
+                    <a class="nav-link active" href="#"></a>
+                  </li>
+                  <!-- <li class="nav-item" id="breadList">
+                      <a class="nav-link active" href="#"></a>
+                    </li> -->
+    
+                  
+                </ul>
+          </div>
+          <!-- <div class="col-md-8">
+             <div id="filterId">
+    
+            </div>
+            <div class="btn-group" aria-label="Basic example">
+                <input type="text" class="form-control search-input" id="formGroupExampleInput" placeholder="Example input placeholder">
+    
+              <button type="button" class="btn btn-outline-secondary" aria-expanded="false">Filter 1 </button>
+              <button type="button" class="btn btn-outline-secondary">Filter 2 <span class="caret"></span></button>
+              <a class="nav-link active filter-nav" href="#">Clear All Filters</a>
+            </div>
+           
+                
+              </div> -->
+            
+            
+          
+    
+          </div>
+        </div>
+      </div>
+      <div class="album py-5 bg-light">
+        <div class="container-fluid content-list">
+        
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="d-flex align-items-left card-pipeline">
+                        <div class="card mb-4 shadow-sm card-content-list card-table">
+                    
+                          <table id="example1" class="display" style="width:100%">
+                            <thead>
+                              <tr>
+                                  <th>Maconomy ID</th>
+                                  <th>Project</th>
+                                  <th>Category</th>
+                                  <th>PBU</th>
+                                  <th>Market</th>
+                                  <th>Discipline</th>
+                                  <th>Start Date</th>
+                                  <th>Created by</th>
+                                  <th>Actions</th>
+                                  
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><span class="edit-content"></span></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><span class="edit-content"></span></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><span class="edit-content"></span></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td><p class="project-text" >System Architect</p></td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                              <td>2011/04/25</td>
+                              <td>2011/04/25</td>
+                              <td><p class="add-content">Project</p></td>
+                          </tr>
+                          </tbody>
+                          </table>
+                  </div>
+                 
+                
+              </div>
+              
+      
+      
+            </div>
+          
+           
+    
+        </div>
+      </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/3.3.3/js/dataTables.fixedColumns.min.js"></script>
+   <script>
+
+      $("#chosenId1").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+    </script>
+    <script>
+
+      $("#chosenId2").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+    </script>
+    <script>
+
+      $("#chosenId3").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+    </script>
+    <script>
+
+      $("#chosenId4").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+    </script>
+    <script>
+
+      $("#chosenId5").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+    </script>
+      
+    <script>
+      var badgeArr = [];
+      $("#chosenId").chosen({
+        disable_search_threshold: 0,
+        display_selected_options: true,
+        no_results_text: "Oops, nothing found!",
+
+      });
+      $('.custom-select').on('change', function (evt, params) {
+        // var splittedText = selText.split("_")[0];
+
+        var text = $(".chosen-select option:selected").text();
+        if (params.selected !== undefined) {
+          var selectedID = $(this).find('option:selected').map(function () {
+            if ($(this).attr('value') == params.selected)
+              return $(this).prop('id')
+          }).get();
+          console.log("Selected: " + selectedID);
+        }
+        if (params.deselected !== undefined) {
+          var deselectedID = $(this).find('option').not(':selected').map(function () {
+            if ($(this).attr('value') == params.deselected)
+              return $(this).prop('id')
+          }).get();
+          console.log("Deselected: " + deselectedID);
+        }
+    
+        if (text != undefined) {
+          badgeArr.push(text);
+        }
+
+        $('.btn').append(text);
+        var badgeHtml = '';
+        $("#breadList").empty();
+        if (badgeArr.length > 0) {
+          $.each(badgeArr, function (index, value) {
+            badgeHtml += '<button type="button" class="btn btn-outline-secondary" aria-expanded="false" id="" onclick="clearFilter(this)">' + value + '</button>';
+          });
+          badgeHtml += '<button type="button" class="btn btn-link">' + 'Clear all filters' + '</button>';
+          $('#breadList').append(badgeHtml);
+        }
+        $('.btn').click(function () { $(this).remove(); });
+      
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+    var table = $('#example1').removeAttr('width').DataTable( {
+       searching: false,
+       "bAutoWidth": false,
+       "pageLength": 10,
+        paging:         true,
+        "pagingType": "simple",
+        
+        "language": {
+          paginate: {
+            next: '<span class="next-icon"></span>', // or '→'
+      previous: '<span class="prev-icon"></span>' // or '←'  
+    },
+            "lengthMenu": "Rows Per page _MENU_",
+            "zeroRecords": "Nothing found - sorry",
+            "info": " _PAGE_ - _PAGES_ of _PAGES_",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(filtered from _MAX_ total records)"
+        },
+        columnDefs: [
+            { width: 220, targets: 0 },
+            { width: 146, targets: 1 },
+            { width: 146, targets: 2 },
+            { width: 146, targets: 3 },
+            { width: 146, targets: 4 },
+            { width: 146, targets: 5 },
+            { width: 146, targets: 6 },
+            { width: 146, targets: 7 },
+            { width: 250, targets: 8, 'orderable': false }
+        ]
+       
+    
+      
+    } );
+} );
+    </script>
+  </body>
+</html>
